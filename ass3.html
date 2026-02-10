@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form id="myForm" onsubmit="return validateForm()">
+
+    <label>Full Name</label>
+    <input type="text" id="name">
+    <span class="error" id="nameError"></span>
+
+    <label>Email</label>
+    <input type="text" id="email">
+    <span class="error" id="emailError"></span>
+
+    <label>Age</label>
+    <input type="number" id="age">
+    <span class="error" id="ageError"></span>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob">
+    <span class="error" id="dobError"></span>
+
+    <label>Password</label>
+    <input type="password" id="password">
+    <span class="error" id="passwordError"></span>
+
+    <label>Confirm Password</label>
+    <input type="password" id="confirmPassword">
+    <span class="error" id="confirmPasswordError"></span>
+
+    <label>Mobile Number</label>
+    <input type="text" id="mobile">
+    <span class="error" id="mobileError"></span>
+
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <span class="error" id="genderError"></span>
+
+    <label>Address</label>
+    <textarea id="address"></textarea>
+    <span class="error" id="addressError"></span>
+
+    <label>City</label>
+    <input type="text" id="city">
+    <span class="error" id="cityError"></span>
+
+    <label>State</label>
+    <input type="text" id="state">
+    <span class="error" id="stateError"></span>
+
+    <label>Pincode</label>
+    <input type="text" id="pincode">
+    <span class="error" id="pincodeError"></span>
+
+    <label>Hobbies</label>
+    <input type="checkbox" class="hobby" value="Sports"> Sports
+    <input type="checkbox" class="hobby" value="Music"> Music
+    <input type="checkbox" class="hobby" value="Reading"> Reading
+    <span class="error" id="hobbyError"></span>
+
+    <label>
+        <input type="checkbox" id="terms"> I agree to Terms & Conditions
+    </label>
+    <span class="error" id="termsError"></span>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
